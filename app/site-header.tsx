@@ -112,6 +112,12 @@ export default function SiteHeader() {
               >
                 205-999-1871
               </a>
+              <a
+                href="mailto:info@lmcconstructionco.com"
+                className="text-sm tracking-wide text-[var(--stone)]"
+              >
+                info@lmcconstructionco.com
+              </a>
               <span className="text-sm tracking-wide text-[var(--stone)]/70">
                 Birmingham, AL
               </span>

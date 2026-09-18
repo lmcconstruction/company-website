@@ -28,6 +28,15 @@ export default function ContactPage() {
           </a>
         </div>
         <div>
+          <p className="font-medium text-[var(--stone)]">Email</p>
+          <a
+            href="mailto:info@lmcconstructionco.com"
+            className="mt-1 block hover:underline"
+          >
+            info@lmcconstructionco.com
+          </a>
+        </div>
+        <div>
           <p className="font-medium text-[var(--stone)]">Service area</p>
           <p className="mt-1">Birmingham, AL and surrounding areas</p>
         </div>

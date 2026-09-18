@@ -65,6 +65,14 @@ export default function AboutPage() {
                 205-999-1871
               </a>
             </p>
+            <p className="mt-1">
+              <a
+                href="mailto:info@lmcconstructionco.com"
+                className="hover:underline"
+              >
+                info@lmcconstructionco.com
+              </a>
+            </p>
           </div>
         </div>
       </div>

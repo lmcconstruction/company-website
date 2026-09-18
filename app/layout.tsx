@@ -67,6 +67,14 @@ export default function RootLayout({
                   205-999-1871
                 </a>
               </p>
+              <p className="mt-1">
+                <a
+                  href="mailto:info@lmcconstructionco.com"
+                  className="hover:underline"
+                >
+                  info@lmcconstructionco.com
+                </a>
+              </p>
               <p className="mt-1">Birmingham, AL</p>
               <p className="mt-4 font-medium text-[var(--stone)]">Hours</p>
               <p className="mt-1">Mon&ndash;Fri, 7am&ndash;6pm</p>
