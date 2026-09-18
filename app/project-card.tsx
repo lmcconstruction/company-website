@@ -17,6 +17,11 @@ export default function ProjectCard({ project }: { project: Project }) {
             For Sale
           </span>
         )}
+        {project.sold && (
+          <span className="absolute left-3 top-3 bg-[var(--brass)] px-3 py-1 text-xs tracking-wide text-[var(--forest-deep)]">
+            Sold
+          </span>
+        )}
       </div>
       <div className="mt-4">
         <p className="text-sm text-[var(--ink)]/60">{project.location}</p>

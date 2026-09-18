@@ -5,6 +5,7 @@ export type Project = {
   status: "current" | "past";
   phase: string;
   forSale?: boolean;
+  sold?: boolean;
   cover: string;
   gallery: string[];
   description: string;
@@ -57,15 +58,20 @@ export const PROJECTS: Project[] = [
       "Roof, brick, and windows are in and finish work is underway on this traditional new build. Listed with LAH Sotheby's International Realty.",
   },
   {
-    slug: "birmingham-traditional-custom-home",
-    title: "Traditional Custom Build",
-    location: "Birmingham, AL",
+    slug: "mountain-brook-full-remodel",
+    title: "Full Home Remodel",
+    location: "Mountain Brook, AL",
     status: "past",
     phase: "Completed",
+    sold: true,
     cover: "/images/completed-custom-home.jpg",
-    gallery: ["/images/completed-custom-home.jpg"],
+    gallery: [
+      "/images/completed-custom-home.jpg",
+      "/images/mountain-brook-remodel-kitchen-1.jpg",
+      "/images/mountain-brook-remodel-kitchen-2.jpg",
+    ],
     description:
-      "A ground-up custom home designed around a wooded lot — brick and stone exterior, deep front lawn, and a layout built for the family that commissioned it.",
+      "A full remodel in Mountain Brook, taken down to the studs and rebuilt with an all-new kitchen, sage cabinetry, marble countertops, and a completely reworked layout. The home has since sold.",
   },
   {
     slug: "birmingham-brick-colonial",

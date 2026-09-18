@@ -59,6 +59,11 @@ export default async function ProjectDetailPage({
               For Sale
             </span>
           )}
+          {project.sold && (
+            <span className="bg-[var(--brass)] px-3 py-1 text-xs tracking-wide text-[var(--forest-deep)]">
+              Sold
+            </span>
+          )}
         </div>
 
         <p className="mt-8 max-w-2xl text-[17px] leading-relaxed text-[var(--ink)]/80">
