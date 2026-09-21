@@ -93,7 +93,10 @@ export default async function ProjectDetailPage({
             </p>
             <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[var(--ink)]/75">
               Floor plans for this project are available on request —{" "}
-              <Link href="/contact" className="underline hover:no-underline">
+              <Link
+                href={`/contact?project=${encodeURIComponent(project.title)}`}
+                className="underline hover:no-underline"
+              >
                 contact us
               </Link>{" "}
               and we&rsquo;ll send them over.
@@ -103,9 +106,11 @@ export default async function ProjectDetailPage({
 
         <div className="mt-16 flex flex-wrap items-center gap-8 border-t border-[var(--forest-deep)]/10 pt-10">
           <p className="font-display text-xl text-[var(--forest-deep)]">
-            Interested in a project like this one?
+            Interested in {project.title}?
           </p>
-          <ArrowLink href="/contact">Get in touch</ArrowLink>
+          <ArrowLink href={`/contact?project=${encodeURIComponent(project.title)}`}>
+            Inquire about this home
+          </ArrowLink>
         </div>
 
         <div className="mt-10">

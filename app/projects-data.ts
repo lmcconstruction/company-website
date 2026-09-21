@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     title: "Cliff",
     location: "Homewood, AL",
     status: "current",
-    phase: "Design & planning",
+    phase: "Under construction",
     renders: true,
     cover: "/images/cliff-render-front.jpg",
     gallery: [
@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
       "/images/cliff-render-basement.jpg",
     ],
     description:
-      "A new custom home taking shape in Homewood. The front elevation pairs cedar-shingle gables with a stone-and-brick base, while the rear opens onto an arched, covered porch. Inside, the main floor is built around an open kitchen with a coffee bar and walk-in pantry, a fireplace-anchored living room with built-in shelving, and a private primary suite with a freestanding tub and walk-in shower. The finished basement adds a lounge, a dining and game room, a home office, and a full gym. These are architectural renderings — construction has not yet begun.",
+      "A new custom home taking shape in Homewood. The front elevation pairs cedar-shingle gables with a stone-and-brick base, while the rear opens onto an arched, covered porch. Inside, the main floor is built around an open kitchen with a coffee bar and walk-in pantry, a fireplace-anchored living room with built-in shelving, and a private primary suite with a freestanding tub and walk-in shower. The finished basement adds a lounge, a dining and game room, a home office, and a full gym. The images below are architectural renderings — construction is currently underway, and we're open to inquiries.",
   },
   {
     slug: "mt-royal",

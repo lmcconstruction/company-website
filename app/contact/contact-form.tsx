@@ -6,7 +6,11 @@ const WEB3FORMS_ACCESS_KEY = "395e2526-59aa-4781-a51e-b78c92a3b9a9";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
-export default function ContactForm() {
+export default function ContactForm({
+  inquiryProject,
+}: {
+  inquiryProject?: string;
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [projectType, setProjectType] = useState("");
@@ -17,16 +21,21 @@ export default function ContactForm() {
     e.preventDefault();
     setStatus("sending");
 
+    const subject = inquiryProject
+      ? `New inquiry about ${inquiryProject} from ${name || "website visitor"}`
+      : `New project inquiry from ${name || "website visitor"}`;
+
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
-          subject: `New project inquiry from ${name || "website visitor"}`,
+          subject,
           from_name: "LMC Construction website",
           name,
           email,
+          inquiring_about: inquiryProject || undefined,
           project_type: projectType,
           message,
         }),
@@ -61,6 +70,13 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
+      {inquiryProject && (
+        <div className="flex items-center gap-3 border border-[var(--sage-light)]/40 bg-[var(--stone)]/5 px-4 py-3 text-sm text-[var(--stone)]">
+          <span className="text-[var(--sage-light)]">Inquiring about:</span>
+          <span className="font-medium">{inquiryProject}</span>
+        </div>
+      )}
+
       <div className="grid gap-8 sm:grid-cols-2">
         <label className="block text-sm">
           <span className="sr-only">Name</span>
@@ -113,7 +129,11 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           rows={4}
-          placeholder="Tell us about the project"
+          placeholder={
+            inquiryProject
+              ? `Tell us what you'd like to know about ${inquiryProject}`
+              : "Tell us about the project"
+          }
           className="underline-field resize-none"
         />
       </label>
