@@ -20,10 +20,27 @@ export default function CurrentProjectsPage() {
         </p>
       </div>
 
-      <div className="mt-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard key={project.slug} project={project} />
-        ))}
+      <div className="mt-14">
+        {projects.length > 0 ? (
+          <div className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        ) : (
+          <div className="border border-dashed border-[var(--forest-deep)]/20 px-8 py-16 text-center">
+            <p className="font-display text-2xl text-[var(--forest-deep)]">
+              Nothing under construction right now.
+            </p>
+            <p className="mt-3 text-[15px] text-[var(--ink)]/70">
+              Check back soon, or take a look at{" "}
+              <a href="/past-projects" className="underline hover:no-underline">
+                past projects
+              </a>
+              .
+            </p>
+          </div>
+        )}
       </div>
 
       <div className="mt-20 flex flex-wrap items-center gap-8 border-t border-[var(--forest-deep)]/10 pt-10">

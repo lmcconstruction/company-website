@@ -8,8 +8,8 @@ export default function Home() {
       {/* Hero */}
       <section className="relative flex min-h-[88vh] items-end overflow-hidden bg-[var(--forest-deep)]">
         <Image
-          src="/images/completed-custom-home.jpg"
-          alt="Completed custom-built home in Birmingham, AL"
+          src="/images/mt-royal-exterior-front.jpg"
+          alt="Mt Royal, a completed full home remodel in Mountain Brook, AL"
           fill
           priority
           className="object-cover"
@@ -76,8 +76,8 @@ export default function Home() {
             </div>
             <div className="relative aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/masonry-mountain-brook.jpg"
-                alt="Brick masonry underway on an LMC Construction project"
+                src="/images/mt-royal-exterior-rear-porch.jpg"
+                alt="The screened porch at Mt Royal, an LMC Construction remodel in Mountain Brook, AL"
                 fill
                 className="object-cover"
               />
@@ -89,8 +89,8 @@ export default function Home() {
       {/* Full-bleed serif overlay section */}
       <section className="relative flex h-[70vh] items-end overflow-hidden bg-[var(--forest-deep)]">
         <Image
-          src="/images/completed-brick-colonial.jpg"
-          alt="A completed LMC Construction home under a dramatic sky"
+          src="/images/mt-royal-exterior-rear-angle.jpg"
+          alt="Mt Royal, a completed LMC Construction remodel in Mountain Brook, AL"
           fill
           className="object-cover"
         />
@@ -112,16 +112,16 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-[3/4] translate-y-6">
                 <Image
-                  src="/images/foundation-birmingham.jpg"
-                  alt="Foundation work on an LMC Construction project"
+                  src="/images/mt-royal-kitchen-range.jpg"
+                  alt="Kitchen range and marble backsplash at Mt Royal"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative aspect-[3/4]">
                 <Image
-                  src="/images/framing-birmingham.jpg"
-                  alt="Framing work on an LMC Construction project"
+                  src="/images/mt-royal-primary-bath.jpg"
+                  alt="Primary bathroom at Mt Royal"
                   fill
                   className="object-cover"
                 />
@@ -132,12 +132,12 @@ export default function Home() {
                 Built Around You
               </p>
               <p className="mt-5 max-w-md text-[15px] leading-relaxed text-[var(--ink)]/75">
-                From the first foundation pour to the final walkthrough, the
-                same small crew stays on your project the whole way through
-                — so nothing gets lost between stages.
+                From the framing to the final finish details, the same
+                small crew stays on your project the whole way through —
+                so nothing gets lost between stages.
               </p>
               <div className="mt-8">
-                <ArrowLink href="/services">See what we build</ArrowLink>
+                <ArrowLink href="/past-projects">See our work</ArrowLink>
               </div>
             </div>
           </div>
@@ -150,8 +150,8 @@ export default function Home() {
           <Link href="/current-projects" className="group block">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/near-complete-mountain-brook.jpg"
-                alt="A current LMC Construction project under way"
+                src="/images/mt-royal-screened-porch.jpg"
+                alt="Screened porch built by LMC Construction"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -160,15 +160,14 @@ export default function Home() {
               Current projects
             </p>
             <p className="mt-1 text-[15px] text-[var(--ink)]/70">
-              See what&rsquo;s under way right now, from foundation to
-              finish.
+              Take a look at what we&rsquo;re building next.
             </p>
           </Link>
           <Link href="/past-projects" className="group block">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/completed-brick-colonial.jpg"
-                alt="A completed LMC Construction home"
+                src="/images/mt-royal-kitchen-wide-2.jpg"
+                alt="Kitchen at Mt Royal, a completed LMC Construction remodel"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
