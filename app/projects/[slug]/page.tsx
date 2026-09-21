@@ -64,6 +64,11 @@ export default async function ProjectDetailPage({
               Sold
             </span>
           )}
+          {project.renders && (
+            <span className="border border-[var(--forest-deep)]/25 px-3 py-1 text-xs tracking-wide text-[var(--forest-deep)]">
+              Renderings
+            </span>
+          )}
         </div>
 
         <p className="mt-8 max-w-2xl text-[17px] leading-relaxed text-[var(--ink)]/80">
@@ -72,7 +77,7 @@ export default async function ProjectDetailPage({
 
         <div className="mt-14">
           <p className="font-display text-2xl text-[var(--forest-deep)]">
-            Gallery
+            {project.renders ? "Renderings" : "Gallery"}
           </p>
           <div className="mt-6">
             <div className="bg-[var(--forest-deep)] p-4 md:p-6">
@@ -81,18 +86,20 @@ export default async function ProjectDetailPage({
           </div>
         </div>
 
-        <div className="mt-14 border-t border-[var(--forest-deep)]/10 pt-10">
-          <p className="font-display text-2xl text-[var(--forest-deep)]">
-            Floor plans
-          </p>
-          <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[var(--ink)]/75">
-            Floor plans for this project are available on request —{" "}
-            <Link href="/contact" className="underline hover:no-underline">
-              contact us
-            </Link>{" "}
-            and we&rsquo;ll send them over.
-          </p>
-        </div>
+        {!project.renders && (
+          <div className="mt-14 border-t border-[var(--forest-deep)]/10 pt-10">
+            <p className="font-display text-2xl text-[var(--forest-deep)]">
+              Floor plans
+            </p>
+            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-[var(--ink)]/75">
+              Floor plans for this project are available on request —{" "}
+              <Link href="/contact" className="underline hover:no-underline">
+                contact us
+              </Link>{" "}
+              and we&rsquo;ll send them over.
+            </p>
+          </div>
+        )}
 
         <div className="mt-16 flex flex-wrap items-center gap-8 border-t border-[var(--forest-deep)]/10 pt-10">
           <p className="font-display text-xl text-[var(--forest-deep)]">

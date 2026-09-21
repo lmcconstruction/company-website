@@ -39,10 +39,10 @@ export default function Home() {
             Local Craft. Uncompromised Quality.
           </p>
           <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-[var(--stone)]/80">
-            LMC Construction builds custom luxury homes and remodels
-            residences that meet the exact standard a homeowner expects.
-            Helping clients combine their lifestyle needs with a home built
-            around them is what we do best.
+            We build custom luxury homes and remodel residences to meet the
+            exact standard a homeowner expects. Helping clients combine
+            their lifestyle needs with a home built around them is what we
+            do best.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-10">
             <ArrowLink href="/about" tone="light">
@@ -112,8 +112,8 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-[3/4] translate-y-6">
                 <Image
-                  src="/images/ib-framing-workers.jpg"
-                  alt="Framing work in progress on an LMC Construction project"
+                  src="/images/mt-royal-primary-bath.jpg"
+                  alt="Primary bathroom at Mt Royal"
                   fill
                   className="object-cover"
                 />

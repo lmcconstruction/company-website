@@ -12,8 +12,8 @@ export default function AboutPage() {
 
       <div className="relative mt-10 aspect-[16/7] w-full overflow-hidden">
         <Image
-          src="/images/ib-brick-exterior-materials.jpg"
-          alt="Brick exterior work on an LMC Construction project"
+          src="/images/mt-royal-entry-detail.jpg"
+          alt="Entry detail on an LMC Construction project"
           fill
           className="object-cover"
         />
@@ -22,11 +22,12 @@ export default function AboutPage() {
       <div className="mt-12 grid gap-12 md:grid-cols-[3fr_2fr]">
         <div className="space-y-6 text-[17px] leading-relaxed text-[var(--ink)]/80">
           <p>
-            LMC Construction is a luxury custom home builder and residential
+            We&rsquo;re a luxury custom home builder and residential
             remodeler based in Birmingham, Alabama. We take on a limited
-            number of projects at a time, by design — it's the only way to
-            guarantee that the person who quotes your job is the same person
-            who's on-site checking the framing three weeks later.
+            number of projects at a time, by design — it&rsquo;s the only way
+            to guarantee that the person who quotes your job is the same
+            person who&rsquo;s on-site checking the framing three weeks
+            later.
           </p>
           <p>
             Our work covers ground-up custom homes, additions, remodels, and

@@ -5,14 +5,14 @@ const services = [
   {
     title: "Custom home building",
     copy: "We work from your plans, or help you develop them with an architect we trust. Every custom build includes a fixed-scope contract, a realistic timeline, and weekly walkthroughs so nothing happens without you knowing about it first.",
-    image: "/images/ib-framing-corner.jpg",
-    alt: "Framing underway on a new custom home",
+    image: "/images/mt-royal-exterior-front.jpg",
+    alt: "A professionally finished custom home built by LMC Construction",
   },
   {
     title: "Additions & second stories",
     copy: "Adding square footage to an existing home is its own discipline — matching rooflines, tying into existing structure, and keeping the rest of the house livable while we work. This is where a lot of general contractors cut corners; it's where we spend the most care.",
-    image: "/images/ib-brick-near-complete.jpg",
-    alt: "A brick addition and second story nearing completion",
+    image: "/images/ib-framing-corner.jpg",
+    alt: "Framing work for an addition and second story",
   },
   {
     title: "Kitchen & bath renovation",
@@ -21,16 +21,16 @@ const services = [
     alt: "A renovated bathroom with checkerboard tile floor",
   },
   {
-    title: "Structural repair",
-    copy: "Foundation settling, load-bearing wall removal, water damage, framing corrections. We assess honestly — sometimes the fix is smaller than a homeowner fears, and we'll tell you that too.",
+    title: "New construction",
+    copy: "Every build starts below ground. We set forms, pour footings, and get the foundation exactly right before anything else happens — because it's the one part of the house you can't go back and fix later.",
     image: "/images/ib-foundation-formwork.jpg",
-    alt: "Foundation formwork on a structural project",
+    alt: "Foundation formwork being set for a new construction project",
   },
   {
     title: "Pre-construction consulting",
     copy: "Buying a fixer-upper or planning a renovation before you've committed? We'll walk the property with you and give you a realistic read on scope and cost before you're locked into anything.",
-    image: "/images/ib-masonry-scaffold.jpg",
-    alt: "Masonry work in progress during a project walkthrough",
+    image: "/images/mt-royal-mudroom-door.jpg",
+    alt: "Walking through a home during a project consultation",
   },
 ];
 
