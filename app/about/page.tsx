@@ -12,8 +12,8 @@ export default function AboutPage() {
 
       <div className="relative mt-10 aspect-[16/7] w-full overflow-hidden">
         <Image
-          src="/images/mt-royal-exterior-front.jpg"
-          alt="Mt Royal, a completed LMC Construction home in Mountain Brook, AL"
+          src="/images/ib-brick-exterior-materials.jpg"
+          alt="Brick exterior work on an LMC Construction project"
           fill
           className="object-cover"
         />

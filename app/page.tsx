@@ -69,15 +69,15 @@ export default function Home() {
                 refined, modern interiors.
               </p>
               <div className="mt-8">
-                <ArrowLink href="/current-projects">
-                  Explore current projects
+                <ArrowLink href="/services">
+                  Explore our services
                 </ArrowLink>
               </div>
             </div>
             <div className="relative aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/mt-royal-exterior-rear-porch.jpg"
-                alt="The screened porch at Mt Royal, an LMC Construction remodel in Mountain Brook, AL"
+                src="/images/ib-bar-millwork.jpg"
+                alt="Custom millwork and cabinetry built by LMC Construction"
                 fill
                 className="object-cover"
               />
@@ -112,16 +112,16 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-[3/4] translate-y-6">
                 <Image
-                  src="/images/mt-royal-kitchen-range.jpg"
-                  alt="Kitchen range and marble backsplash at Mt Royal"
+                  src="/images/ib-framing-workers.jpg"
+                  alt="Framing work in progress on an LMC Construction project"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="relative aspect-[3/4]">
                 <Image
-                  src="/images/mt-royal-primary-bath.jpg"
-                  alt="Primary bathroom at Mt Royal"
+                  src="/images/mt-royal-kitchen-range.jpg"
+                  alt="Finished kitchen range and marble backsplash at Mt Royal"
                   fill
                   className="object-cover"
                 />
