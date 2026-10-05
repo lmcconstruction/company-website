@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --forest-deep: #1a3d29;
+  --forest-mid: #46734f;
+  --forest-soft: #5a8c6e;
+  --sage-light: #aacdb9;
+  --stone: #f4f2ea;
+  --stone-warm: #ece6d5;
+  --ink: #232019;
+  --slate: #6e7670;
+  --brass: #ab8752;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--stone);
+  color: var(--ink);
+}
+
+.font-display {
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+.font-body {
+  font-family: "Work Sans", Arial, sans-serif;
+}
+
+/* Blueprint corner mark motif — used sparingly as a structural device, not decoration */
+.corner-mark {
+  position: relative;
+}
+.corner-mark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-top: 2px solid var(--brass);
+  border-left: 2px solid var(--brass);
+}
+.corner-mark::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border-bottom: 2px solid var(--brass);
+  border-right: 2px solid var(--brass);
+}
+
+/* Subtle diagonal lattice texture for dark sections, echoing a blueprint grid */
+.lattice-texture {
+  background-image:
+    repeating-linear-gradient(45deg, rgba(244, 242, 234, 0.035) 0, rgba(244, 242, 234, 0.035) 1px, transparent 1px, transparent 26px),
+    repeating-linear-gradient(-45deg, rgba(244, 242, 234, 0.035) 0, rgba(244, 242, 234, 0.035) 1px, transparent 1px, transparent 26px);
+}
+
+.underline-field {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(244, 242, 234, 0.35);
+  color: var(--stone);
+  padding: 0.65rem 0.1rem;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.underline-field::placeholder {
+  color: rgba(244, 242, 234, 0.55);
+}
+.underline-field:focus {
+  border-bottom-color: var(--stone);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
