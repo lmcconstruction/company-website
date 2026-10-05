@@ -144,6 +144,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Now on the market */}
+      <section className="bg-[var(--stone)] py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid md:grid-cols-[1.3fr_1fr]">
+            <Link
+              href="/projects/durham"
+              className="group relative block aspect-[4/3] overflow-hidden md:aspect-auto md:min-h-[440px]"
+            >
+              <Image
+                src="/images/durham-exterior-front.jpg"
+                alt="543 Durham Dr, a completed custom home in Homewood, AL"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <span className="absolute left-3 top-3 bg-[var(--forest-deep)] px-3 py-1 text-xs tracking-wide text-[var(--stone)]">
+                For Sale
+              </span>
+            </Link>
+            <div className="corner-mark z-10 flex flex-col justify-center bg-[var(--stone-warm)] p-10 md:ml-[-3rem] md:p-14">
+              <p className="font-display text-lg text-[var(--forest-mid)]">
+                Now on the market
+              </p>
+              <p className="mt-3 font-display text-3xl leading-tight text-[var(--forest-deep)] md:text-4xl">
+                543 Durham Dr, Homewood
+              </p>
+              <p className="mt-5 text-[15px] leading-relaxed text-[var(--ink)]/75">
+                A completed LMC custom home &mdash; 5 bedrooms, 4.5
+                bathrooms, and 4,444 square feet of finished living space.
+              </p>
+              <div className="mt-8">
+                <ArrowLink href="/projects/durham">View the home</ArrowLink>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects teaser */}
       <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
         <div className="grid gap-10 md:grid-cols-2">

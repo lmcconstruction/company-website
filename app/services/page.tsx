@@ -5,8 +5,8 @@ const services = [
   {
     title: "Custom home building",
     copy: "We work from your plans, or help you develop them with an architect we trust. Every custom build includes a fixed-scope contract, a realistic timeline, and weekly walkthroughs so nothing happens without you knowing about it first.",
-    image: "/images/mt-royal-exterior-front.jpg",
-    alt: "A professionally finished custom home built by LMC Construction",
+    image: "/images/durham-exterior-front.jpg",
+    alt: "543 Durham Dr, a custom home built from the ground up by LMC Construction",
   },
   {
     title: "Additions & second stories",

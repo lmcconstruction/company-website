@@ -22,6 +22,10 @@ export default async function ProjectDetailPage({
     src,
     alt: `${project.title} in ${project.location}`,
   }));
+  const progressImages = (project.progressGallery ?? []).map((src) => ({
+    src,
+    alt: `${project.title} construction progress`,
+  }));
 
   return (
     <div>
@@ -75,6 +79,21 @@ export default async function ProjectDetailPage({
           {project.description}
         </p>
 
+        {project.details && (
+          <dl className="mt-10 grid max-w-3xl grid-cols-2 gap-x-8 gap-y-6 border-t border-[var(--forest-deep)]/10 pt-8 sm:grid-cols-3">
+            {project.details.map((d) => (
+              <div key={d.label}>
+                <dt className="text-xs tracking-wide text-[var(--ink)]/55">
+                  {d.label}
+                </dt>
+                <dd className="mt-1 font-display text-xl text-[var(--forest-deep)]">
+                  {d.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        )}
+
         <div className="mt-14">
           <p className="font-display text-2xl text-[var(--forest-deep)]">
             {project.renders ? "Renderings" : "Gallery"}
@@ -85,6 +104,23 @@ export default async function ProjectDetailPage({
             </div>
           </div>
         </div>
+
+        {progressImages.length > 0 && (
+          <div className="mt-14">
+            <p className="font-display text-2xl text-[var(--forest-deep)]">
+              Construction progress
+            </p>
+            <div className="mt-6">
+              <div className="bg-[var(--forest-deep)] p-4 md:p-6">
+                <Gallery
+                  images={progressImages}
+                  fit="contain"
+                  aspect="aspect-[4/3]"
+                />
+              </div>
+            </div>
+          </div>
+        )}
 
         {!project.renders && (
           <div className="mt-14 border-t border-[var(--forest-deep)]/10 pt-10">

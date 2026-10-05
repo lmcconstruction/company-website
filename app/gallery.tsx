@@ -5,8 +5,12 @@ import Image from "next/image";
 
 export default function Gallery({
   images,
+  fit = "cover",
+  aspect = "aspect-[16/9]",
 }: {
   images: { src: string; alt: string }[];
+  fit?: "cover" | "contain";
+  aspect?: string;
 }) {
   const [index, setIndex] = useState(0);
   const total = images.length;
@@ -20,12 +24,12 @@ export default function Gallery({
 
   return (
     <div>
-      <div className="relative aspect-[16/9] w-full overflow-hidden">
+      <div className={`relative ${aspect} w-full overflow-hidden`}>
         <Image
           src={images[index].src}
           alt={images[index].alt}
           fill
-          className="object-cover"
+          className={fit === "contain" ? "object-contain" : "object-cover"}
         />
       </div>
       <div className="mt-6 flex items-center justify-center gap-6 text-[var(--stone)]">
